@@ -13,7 +13,7 @@ class Spaceship:
         self.mag = []
         self.magCounter = 0
 
-        self.obj = pygame.image.load('spaceship.png')
+        self.obj = pygame.image.load('pictures/spaceship.png')
         self.obj = pygame.transform.scale(self.obj, ( 50, 50))
     
     def shoot(self):

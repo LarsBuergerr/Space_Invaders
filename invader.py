@@ -1,3 +1,4 @@
+from random import *
 import pygame
 
 
@@ -7,6 +8,7 @@ class Invader:
 
         self.x = x
         self.y = y
+        self.movement = randint(0, 1)
         self.screen = screen
         
         self.obj = pygame.image.load('pictures/invader.png')
