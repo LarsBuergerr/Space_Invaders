@@ -11,7 +11,7 @@ class Invader:
         self.movement = randint(0, 1)
         self.screen = screen
         
-        self.obj = pygame.image.load('pictures/invader.png')
+        self.obj = pygame.image.load('pictures/invader.png').convert_alpha()
         self.obj = pygame.transform.scale(self.obj, (50, 50))
 
         self.screen.blit(self.obj, (self.x, self.y))
